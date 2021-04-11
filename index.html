@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <title>Google</title>
+  <style>
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    input[type="text"] {
+      border-radius: 0%;
+      background-image: url("./outline_search_black_24dp.png");
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding-left: 40px;
+      background-color: white;
+      width: 500px;
+      height: 40px;
+    }
+    body {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 400;
+    }
+
+    .button {
+      display: flex;
+      background-color: #f8f9fa;
+      padding: 7.5px 16px;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px;
+      border: 1px solid #f8f9fa;
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #3c4043;
+    }
+    footer {
+      background-color: #dadce0;
+    }
+
+    .image {
+      padding: 10px;
+    }
+    .flex_nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .align-nav {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding: 5px 5px 5px 5px;
+    }
+    .nav-item {
+      margin-right: 20px;
+    }
+    .align-footer {
+      display: flex;
+      align-content: flex-start;
+      align-content: center;
+      padding: 5px 5px 5px 5px;
+    }
+  </style>
+</head>
+
+<body class="container">
+  <header>
+    <nav class="flex_nav">
+      <div class="align-nav">
+        <div class="nav-item"><a href="#">About</a></div>
+        <div class="nav-item"><a href="#">Store</a></div>
+      </div>
+      <div class="align-nav">
+        <div class="nav-item"><a href="#">Gmail</a></div>
+        <div class="nav-item"><a href="#">Images</a></div>
+        <div class="nav-item"><img src="./outline_apps_black_24dp.png" /></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <div class="content">
+        <div class="image">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google Logo"
+          />
+        </div>
+        <div>
+          <input
+            class="search_box"
+            type="text"
+            id="search"
+            name="search"
+            required
+          />
+        </div>
+        <div>
+          <input
+            class="button"
+            type="submit"
+            value="Google Search"
+            id="search"
+            name="search"
+          />
+          <input
+            class="button"
+            type="submit"
+            value="I'm Feeling Lucky"
+            id="feelingLucky"
+            name="feelingLucky"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <div class="align-footer">
+        <div class="nav-item"><a href="#">Australia</a></div>
+      </div>
+      <div class="flex_nav">
+        <div class="align-nav">
+          <div class="nav-item"><a href="#">Advertising</a></div>
+          <div class="nav-item"><a href="#">Business</a></div>
+          <div class="nav-item"><a href="#">How Search works</a></div>
+        </div>
+        <div class="align-nav">
+          <div class="nav-item"><a href="#">Privacy</a></div>
+          <div class="nav-item"><a href="#">Terms</a></div>
+          <div class="nav-item"><a href="#">Settings</a></div>
+        </div>
+      </div>
+    </nav>
+  </footer>
+</body>
